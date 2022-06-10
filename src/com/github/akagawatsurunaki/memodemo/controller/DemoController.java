@@ -77,7 +77,7 @@ public class DemoController extends Controller {
 		if (flag) {
 			currentWord.setAnswerCount(true);
 			JOptionPane.showMessageDialog(mainFrame, "真棒！\n这个单词已经答对了" + currentWord.getCorrectAnswerCount() + "次！",
-					"单词拼写错误", JOptionPane.INFORMATION_MESSAGE);
+					"单词拼写正确", JOptionPane.INFORMATION_MESSAGE);
 			setCurrentWordRandomly(currentWord);
 		} else {
 			currentWord.setAnswerCount(false);
