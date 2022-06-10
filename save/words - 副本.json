@@ -1,0 +1,17 @@
+{
+    "idCount": 2,
+    "dataList": [
+        {
+            "meaningList": [
+                {
+                    "partOfSpeech": "ADJECTIVE",
+                    "content": "美味的；可口的；芬芳的；令人愉快的；令人开心的；宜人的"
+                }
+            ],
+            "word": "delicious",
+            "wrongAnswerCount": 0,
+            "correctAnswerCount": 0,
+            "id": 1
+        }
+    ]
+}
