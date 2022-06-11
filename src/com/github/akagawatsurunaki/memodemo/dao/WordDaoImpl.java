@@ -145,6 +145,10 @@ public class WordDaoImpl implements WordDao {
 		
 		return found;
 	}
+	@Override
+	public Word findWordById(int id) {
+		return wordsTable.findDataById(id);
+	}
 
 
 }

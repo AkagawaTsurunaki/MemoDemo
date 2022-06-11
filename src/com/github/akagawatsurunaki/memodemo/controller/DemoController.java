@@ -66,6 +66,7 @@ public class DemoController extends Controller {
 	}
 
 	public void updateCurrentWordTextPane() {
+		currentWord = wordDao.findWordById(currentWord.getId());
 		mainFrame.getCenterWordTextPane().setText(currentWord.toMeaningString());
 		mainFrame.getTxtFldAnswer().setText("");
 	}

@@ -79,6 +79,8 @@ public class NewWordController extends Controller {
 		DemoController.getInstance().updateCurrentWordTextPane();
 		JOptionPane.showMessageDialog(newWordFrame, "单词" + newWordFrame.getTxtFldWord().getText() + "被成功添加至已有词书。",
 				"新增单词成功", JOptionPane.INFORMATION_MESSAGE);
+		
+		DemoController.getInstance().updateCurrentWordTextPane();
 	}
 
 	private void clear() {

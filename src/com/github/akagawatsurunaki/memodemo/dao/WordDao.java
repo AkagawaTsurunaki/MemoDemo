@@ -46,4 +46,6 @@ public interface WordDao {
 
 	// After check if the word .
 	void addAnswerCount(int wordId, boolean b);
+
+	Word findWordById(int id);
 }
