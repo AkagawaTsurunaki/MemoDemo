@@ -10,4 +10,5 @@ public class MemoDemoHandler {
 		JOptionPane.showInternalConfirmDialog(null, e.getMessage(), e.getTitle(), JOptionPane.YES_OPTION);
 		System.exit(-1);
 	}
+	
 }

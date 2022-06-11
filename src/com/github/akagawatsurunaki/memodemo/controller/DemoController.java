@@ -1,7 +1,10 @@
 package com.github.akagawatsurunaki.memodemo.controller;
 
 import javax.swing.JOptionPane;
+
+import com.github.akagawatsurunaki.memodemo.exceptions.MemoDemoException;
 import com.github.akagawatsurunaki.memodemo.gui.MainFrame;
+import com.github.akagawatsurunaki.memodemo.handler.MemoDemoHandler;
 
 public class DemoController extends Controller {
 
@@ -27,7 +30,14 @@ public class DemoController extends Controller {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		DemoController.getInstance().invoke();
+		try {
+			DemoController.getInstance().invoke();
+		} catch (Exception e) {
+			// If a fatal error happened, the whole program will exit with status code -1.
+			MemoDemoException me = new MemoDemoException("MemoDemo关键性停止",  "MemoDemo意外地遇到了关键性错误，\n必须立刻关闭本程序。\n异常信息：" + e.getMessage());
+			MemoDemoHandler.handle(me);
+		}
+		
 	}
 
 	public void invoke() {
