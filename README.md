@@ -1,5 +1,4 @@
-# MemoDemo
-Northeastern University (China) Object-Oriented Programming Course Final Assignments: Memo Demo
+# Northeastern University (NEU in China) Object-Oriented Programming Course Final Assignments and Homework - Memo Demo
 
 Language: Java
 
